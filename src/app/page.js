@@ -1,11 +1,12 @@
 import Image from "next/image";
-
+import Navbar from "./components/Nav";
+import Footer from "./components/Foot";
 export default function Home() {
   return (
     <>
-    <h2>
-      hello world
-    </h2>
+    <Navbar/>
+cdc 
+   <Footer/>
     </>
   );
 }
