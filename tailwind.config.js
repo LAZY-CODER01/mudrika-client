@@ -1,15 +1,24 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+export default {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      screens: {
+        xs: "320px",
+        mobile: "576px",
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primaryColor: "#0067FF",
+        yellowColor: "#FEB60D",
+        purpleColor: "#9771FF",
+        irisBlueColor: "#01B5C5",
+        headingColor: "#181A1E",
+        lightGray: '#F2F2F2',
+        textColor: "#4E545F",
+      },
+
+      boxShadow: {
+        panelShadow: "rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;",
       },
     },
   },

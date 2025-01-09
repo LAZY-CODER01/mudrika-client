@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Navbar from "./components/Nav";
 import Footer from "./components/Foot";
-export default function Home() {
+import Home from "./home/page";
+export default function Index() {
   return (
     <>
     <Navbar/>
-cdc 
+       <Home/>
    <Footer/>
     </>
   );
